@@ -1,0 +1,24 @@
+# Grouper ESB AMQP Publisher Username Password Support
+
+This is a minor tweak to Unicon's good work in the project.
+
+*  https://github.com/Unicon/grouper-amqp-esb-publisher/
+
+Adding username password support via two additional properties.
+I did this to remove a dependency on the RabbitMQ "Guest" user
+being available, which is not allowed by default other than localhost.
+Please refer to Unicon's repository above for information on 
+other properties and general information on the project.
+
+# These properties add username password support
+
+changeLog.consumer.esbAmqp.username
+changeLog.consumer.esbAmqp.password
+
+#For example
+
+changeLog.consumer.esbAmqp.username = midpoint
+changeLog.consumer.esbAmqp.password = 5ecr3t
+
+
+
